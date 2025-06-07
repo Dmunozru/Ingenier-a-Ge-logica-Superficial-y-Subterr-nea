@@ -1,0 +1,281 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  text-align: justify
+}
+
+h1 {
+  color: #3d5733;
+  text-decoration: underline;
+  text-align: justify;
+}
+
+h2 {
+  color: #8a6c4a;
+  text-decoration: underline;
+  text-align: justify;
+}
+
+a {
+  color: #3d5733;
+  text-decoration: none;
+  text-align: justify;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+textarea {
+  min-width: 100%;
+  resize: none;
+  min-height: 100px;
+  font-family: sans-serif;
+}
+
+.menu-icon {
+  width: 75px;
+  height: auto;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3d5733;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 60px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #264233;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #1b8dbc;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #3d5733;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #264233;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #1b8dbc;
+}
+
+.section-indicator {
+  margin-left: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cuadros {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+  text-align: justify;
+}
+
+.cuadro {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: justify;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.cuadro:hover {
+  transform: translateY(-5px);
+}
+
+.cuadro img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.cuadro h3 {
+  font-size: 20px;
+  color: #2c4b36;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.cuadro p {
+  font-size: 15px;
+  color: #444;
+  text-align: justify;
+}
+
+.p-section {
+  font-size: 15px;
+  color: #444;
+  text-align: justify;
+
+}
+
+/* 🔽 NUEVO BLOQUE DE SECCIÓN INTRO */
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  padding-right: 30px;
+}
+
+.intro-text h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #3d5733;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.intro-text h2 {
+  font-size: 1.2em;
+  color: #8a6c4a;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.intro-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+}
+
+.intro-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.intro-image img {
+  max-width: 100%;
+  border-radius: 50px 0 50px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 768px) {
+  .cuadros {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    column-gap: 15px;
+  }
+
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .intro-text {
+    padding-right: 0;
+  }
+
+  .intro-text h1, .intro-text h2, .intro-text p {
+    text-align: center;
+  }
+}
+
+.contact-section {
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.contact-item a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
